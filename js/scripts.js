@@ -1,13 +1,21 @@
 $(document).ready(function() {
+
   $("h1").click(function() {
-    alert("This is a heading.");
+    $("h1").fadeOut();
   });
+  
 
   $("p").click(function() {
-    alert("This is a paragraph.");
+    $("p").slideDown();
   });
 
   $("img").click(function() {
     alert("This is an image.");
   });
+
+  $(".clickable").click(function() {
+    $(".walrus-showing").toggle();
+    $(".walrus-hidden").toggle();
+  });
+  
 });
